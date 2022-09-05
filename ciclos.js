@@ -7,7 +7,7 @@
 //         console.log(i+' es divisor de '+n)
 //     }
 // } 
-
+//-----------
 // ejercicio 2
 
 // var n =Math.round(Math.random()*20)
@@ -22,7 +22,7 @@
 // if (c==2) {
 //     console.log(n+" es primo")
 // }
-    
+
 // ejercicio 3
 
 // var n = Math.round(Math.random()*100),
@@ -61,7 +61,7 @@
 //         console.log (n+' no es un numero perfecto')
 //     }
 //     }
-    
+
 // }
 
 // ejercicio 5
@@ -95,7 +95,7 @@
 //     m = 5 * i
 //     console.log('los multiplos de 5 son: '+m)
 // }
-       
+
 
 //ejercicio 9
 
@@ -119,7 +119,7 @@
 // if (r4==0) {
 //     console.log('el m.c.d es '+r3)
 // } ;
-  
+
 // ejercicio 11
 
 // ejercicio 12
@@ -142,4 +142,4 @@
 //     d = n % 10
 //     n = d / 10
 //     console.log(d)
-// } ;     
+// } ;
