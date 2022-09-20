@@ -48,7 +48,7 @@
 // else if (k!=l){
 //     console.log('Los numeros son diferentes',[v,k,l])
 // } 
-                                                                             
+
 // // ejercicio 3
 
 // var numero=Math.round(Math.random()*9.999*999);
@@ -69,7 +69,7 @@
 // //ejercicio 4
 // var nota = Math.round(Math.random (1) * 10)
 //   console.log(nota)
-  
+
 //    if (nota ==10) {
 //     console.log ('su nota es excelente',nota)
 //   }   
@@ -158,7 +158,7 @@
 //      e = h * 5000
 //     console.log ('horas trabajadas:',h,'Pago de horas trabajadas:',e)
 // }   
-                
+
 // //ejercicio 8
 // var m = Math.round (Math.random () *1000)
 // console.log(m)
@@ -169,7 +169,7 @@
 //     me = m * 1.2
 //    console.log ('El numero de segundos es: ',m,'el total a pagar es: ',me)
 // }
-                           
+
 // //ejercicio 9
 // var d = Math.round(Math.random () * 31)
 // var m = Math.round(Math.random () * 12)
@@ -208,8 +208,8 @@
 // } else {
 //     console.log(h,m,s) 
 // }              
-    
-                        
+
+
 // //ejercicio 11
 
 // var d= Math.round(Math.random() * 100000)
@@ -276,7 +276,7 @@
 // console.log(s)  
 
 // if (m>59){
-    
+
 // }
 // if (h>23){
 
@@ -299,12 +299,12 @@
 // hora = ss / 3600
 // console.log(hora)
 // console.log ('el numero de segundos es: ',ss,'el numero de minutos es: ',minuto,'las horan son: ',hora);
-    
+
 // //ejercicio 14
 
 // var n1=Math.round (Math.random()*1000)
 // console.log(n1)
-             
+
 // var v1 = n1/3
 // console.log(v1)
 // var v2 = n1*3
@@ -312,7 +312,7 @@
 
 // console.log('la base es: ',v1,'la altura es: ',v1,'la profundidad es: ',v1,)
 // console.log('el volumen del cubo es: ',v2,);
-     
+
 // //ejercicio 15
 
 // var año = Math.round (Math.random  () * 2022 )

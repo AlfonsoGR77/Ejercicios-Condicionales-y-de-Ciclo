@@ -83,21 +83,12 @@ Pero si el número por ejemplo es 32 indica que es el 1 de febrero. No tenga en
 cuenta si el año es bisiesto, es decir siempre febrero tiene 28 días.*/
 
 //FUNCION CLASICA PUNTO 6 CONDICINAL
-function numero (n){if (n<=0) {                  
-    console.log(" Mes no valido") } 
-    else if (n<=31){console.log("PERTENECE A ENERO")} 
-    else if (n<59){console.log("PERTENECE A FEBRERO")} 
-    else if (n<90){console.log("PERTENECE A MARZO")} 
-    else if (n<120){console.log("PERTENECE A ABRIL")} 
-    else if(n<151){console.log("PERTENECE A MAYO")} 
-    else if(n<181){ console.log("PERTENECE A JUNIO")} 
-    else if(n<212){ console.log("PERTENECE A JULIO")}
-    else if(n<243){console.log("PERTENECE A AGOSTO")}
-    else if(n<270){console.log("PERTENECE A SEPTIEMBRE")}
-    else if(n<304){console.log("PERTENECE A OCTUBRE")}
-    else if(n<334){console.log("PERTENECE A NOVIEMBRE")}
-    else {console.log("PERTENECE A DICIEMBRE")}} 
-    numero (10);
+function numero(n) {
+    if (n <= 0) {
+        console.log(" Mes no valido")
+    } else if (n <= 31) { console.log("PERTENECE A ENERO") } else if (n < 59) { console.log("PERTENECE A FEBRERO") } else if (n < 90) { console.log("PERTENECE A MARZO") } else if (n < 120) { console.log("PERTENECE A ABRIL") } else if (n < 151) { console.log("PERTENECE A MAYO") } else if (n < 181) { console.log("PERTENECE A JUNIO") } else if (n < 212) { console.log("PERTENECE A JULIO") } else if (n < 243) { console.log("PERTENECE A AGOSTO") } else if (n < 270) { console.log("PERTENECE A SEPTIEMBRE") } else if (n < 304) { console.log("PERTENECE A OCTUBRE") } else if (n < 334) { console.log("PERTENECE A NOVIEMBRE") } else { console.log("PERTENECE A DICIEMBRE") }
+}
+numero(10);
 
 //FUNCION FLECHA PUNTO 6 CONDICIONAL
 
@@ -157,9 +148,11 @@ function divisor(n) {
 
 //FUNCION FLECHA PUNTO 1 CICLO
 
-const divisor = (n) => {let d = 0
-for (i = 1; i <= n; i++) { if (n % i == 0) { console.log(i) } }}
-(divisor(10))
+const divisor = (n) => {
+        let d = 0
+        for (i = 1; i <= n; i++) { if (n % i == 0) { console.log(i) } }
+    }
+    (divisor(10))
 
 
 /*5-¿Cuáles y cuántos son los números primos comprendidos 
@@ -188,11 +181,18 @@ function numeros_primos(c, x) {
 
 //FUNCION FLECHA PUNTO 5 CICLO
 
-const numeros_primos = (c, x) => {var c = 0 
-for (n = 0; n <= 1000; n++) {x = 0, c = 0
-while (x < n) {x = x + 1
-if (n % x == 0) { c++ }}if (c == 2) { console.log(n + " es primo") }}}
-(numeros_primos(20));
+const numeros_primos = (c, x) => {
+        var c = 0
+        for (n = 0; n <= 1000; n++) {
+            x = 0, c = 0
+            while (x < n) {
+                x = x + 1
+                if (n % x == 0) { c++ }
+            }
+            if (c == 2) { console.log(n + " es primo") }
+        }
+    }
+    (numeros_primos(20));
 
 /*2-Determinar si un numero es o no es primo */
 
@@ -215,10 +215,15 @@ function n_primo(n) {
 
 //FUNCION FLECHA PUNTO 2 CICLO
 
-const n_primo = (n) => {var c = console.log
-for (x = 1; x <= n; x++) {var d = n % x
-if (d == 0) { c = c + 1 }}if (c == 2) { console.log(n + " es primo") } else console.log('no es primo')}
-(n_primo(3));
+const n_primo = (n) => {
+        var c = console.log
+        for (x = 1; x <= n; x++) {
+            var d = n % x
+            if (d == 0) { c = c + 1 }
+        }
+        if (c == 2) { console.log(n + " es primo") } else console.log('no es primo')
+    }
+    (n_primo(3));
 
 
 /*8. Determinar cuales son los múltiplos de 5 comprendidos entre 
@@ -236,9 +241,13 @@ multiplos(25);
 
 //FUNCION FLECHA PUNTO 8 CICLO
 
-const multiplos = (n) => {var n = Math.round(Math.random() * 100)
-for (i = 1; i < n; i++) {m = 5 * i
-console.log('los multiplos de 5 son: ' + m)}}
+const multiplos = (n) => {
+    var n = Math.round(Math.random() * 100)
+    for (i = 1; i < n; i++) {
+        m = 5 * i
+        console.log('los multiplos de 5 son: ' + m)
+    }
+}
 multiplos(25);
 
 /*4-Determinar cuales y cuantos números perfectos hay entre 1 y 1000? */
@@ -270,51 +279,62 @@ function n_perfectos(n, c, p) {
 
 //FUNCION FLECHA PUNTO 4 CICLO
 
-const n_perfectos = (n, c, p) => {var n = 1,c = 0,p = 0
-console.log
-for (i = 1; i <= 1000; n++) { while (i < n) {d = n % i, i += 1
-if (d == 0) {c = c + i 
-console.log(c)}if (c == n) { console.log(n + ' es un numero perfecto') } else { console.log(n + ' no es un numero perfecto') }}}}
-(n_perfectos(3));
+const n_perfectos = (n, c, p) => {
+        var n = 1,
+            c = 0,
+            p = 0
+        console.log
+        for (i = 1; i <= 1000; n++) {
+            while (i < n) {
+                d = n % i, i += 1
+                if (d == 0) {
+                    c = c + i
+                    console.log(c)
+                }
+                if (c == n) { console.log(n + ' es un numero perfecto') } else { console.log(n + ' no es un numero perfecto') }
+            }
+        }
+    }
+    (n_perfectos(3));
 
 
 
 /*DESVIACION ESTANDAR*/
 
-function desviacion (t){
-    let v=[]
-    let sum = 0                          
-    for (let i = 0; i < t; i++) {      
-    v[i]=Math.round(Math.random()*20)
-    sum = sum + v[i]       
+function desviacion(t) {
+    let v = []
+    let sum = 0
+    for (let i = 0; i < t; i++) {
+        v[i] = Math.round(Math.random() * 20)
+        sum = sum + v[i]
     }
     var prom = sum / 5
-    let oper1= ((v[0]-prom)*2)+((v[1]-prom)**2)+((v[2]-prom)**2)+((v[3]-prom)**2)+((v[4]-prom)*2) 
+    let oper1 = ((v[0] - prom) * 2) + ((v[1] - prom) ** 2) + ((v[2] - prom) ** 2) + ((v[3] - prom) ** 2) + ((v[4] - prom) * 2)
     let opr2 = oper1 / 5
-    let ope3 = Math.trunc (opr2)
+    let ope3 = Math.trunc(opr2)
     v.sort();
-    console.log ('el arreglo es',v)
-    console.log ('La suma de todo es',sum) 
-    console.log ('El promedio es',prom)  
-    console.log ('la suma es ',oper1)
-    console.log ('dividido por los valores es',opr2) 
-    console.log ('al final la desviacion estandar',ope3) 
-    }
-    desviacion (5)
+    console.log('el arreglo es', v)
+    console.log('La suma de todo es', sum)
+    console.log('El promedio es', prom)
+    console.log('la suma es ', oper1)
+    console.log('dividido por los valores es', opr2)
+    console.log('al final la desviacion estandar', ope3)
+}
+desviacion(5)
 
 /*MODA numero que mas se repite*/
 
-const numeros  = [1, 2, 2, 3, 4, 4, 5];
+const numeros = [1, 2, 2, 3, 4, 4, 5];
 let duplicados = [];
- 
+
 const tamArray = [...numeros].sort();
- 
+
 for (let i = 0; i < tamArray.length; i++) {
-  if (tamArray[i + 1] === tamArray[i]) {
-    duplicados.push(tamArray[i]);
-  }
+    if (tamArray[i + 1] === tamArray[i]) {
+        duplicados.push(tamArray[i]);
+    }
 }
- 
+
 console.log(duplicados);
 
 

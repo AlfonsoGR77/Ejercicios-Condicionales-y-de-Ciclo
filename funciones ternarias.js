@@ -29,22 +29,22 @@
 /*escriba una funcion que lea una cadena de texto y diga cuantas vocales
  tiene cuantas consonantes y cuantes caracteres diferentes a vocales y consonantes*/
 
-const contar=palabra=> {
-   var v= 'aáeéiíoóuú'
-    c ='qwrtypsdfghjklñzxcvbnm',
-    cantidaddev=0,
-    cantidaddec=0
+const contar = palabra => {
+    var v = 'aáeéiíoóuú'
+    c = 'qwrtypsdfghjklñzxcvbnm',
+        cantidaddev = 0,
+        cantidaddec = 0
     for (const l of palabra) {
         if (v.includes(l.toLoweCase())) {
             cantidaddev++
-        } else if (c,includes(l.toLoweCase())) {
+        } else if (c, includes(l.toLoweCase())) {
             cantidaddec++
         }
     }
     return `Cantidad de v: ${cantidaddev}\n cantidad de c: ${cantidaddec}`
 };
 console.log(contar('Juan Manuel Garcia'))
-// includes, comparacion de letra por letra
+    // includes, comparacion de letra por letra
 
 // let browserType ='lema del sena, por lo cual lo encontramos';
 //     browserType.length;
@@ -53,8 +53,3 @@ console.log(contar('Juan Manuel Garcia'))
 //---------------------------------------------------------------------------
 
 //programacion horientada a objetos
-
-
-
-
-
