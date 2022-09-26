@@ -41,27 +41,9 @@ for (let i = 1; i < 11; i++) {
     a(i);}
 
 //----------------------------------------------------------
-var contador = 0 
-function t (elemento) {
-    return new Promise (resolve => {
-        setTimeout(() => {
-            contador = contador + 1
-            resolve ('x cuenta '+contador) 
-        }, 1000);
-    })
-
-}
-
-async function a (elemento){
-    console.log('se repite', contador)
-    const  al = await t (elemento) 
-    console.log(al)}
-
-for (let i = 1; i <= 10; i++) {
-    a(i);}
 
 
-
+    
 
 
 
